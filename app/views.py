@@ -63,7 +63,7 @@ def login():
             return redirect(url_for('index'))
 
         else: ##validation error
-            error = u'המצביע אינו מופיע בבסיס הנתונים'
+            error = u'המצביע אינו מופיע בבסיס הנתונים או שכבר הצביע '
 
     return render_template('login.html',
                            error=error)
